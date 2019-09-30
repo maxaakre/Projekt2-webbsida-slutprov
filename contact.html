@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/style.css"/>
+
     <script
       src="https://kit.fontawesome.com/99fe370a13.js"
       crossorigin="anonymous"
     ></script>
-
     <link
       href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Montserrat&display=swap"
       rel="stylesheet"
     />
-    <title>Kim Vagi Projekt 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" 
+    integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
+    <title>Kim Vagi Projekt 2 contact</title>
   </head>
   <body>
     <div class="container">
@@ -22,12 +24,12 @@
         <h1>Kim Vagi</h1>
         <ul>
           <li><a href="index.html">Hem</a></li>
-          <li><a href="#">Om mig</a></li>
+          <li><a href="ommig.html">Om mig</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </header>
       
-      <section class="grid-container">
+      <section class="grid-container animated bounceInLeft"  >
         <section class="grid-item">
                 <div class="contact-form">
                         <form action="contact-form">
@@ -37,15 +39,19 @@
                           <label for="message">Your Message</label><br />
                           <textarea
                             name="message"
-                            placeholder="Dear Insurance company..."
+                            placeholder="Skriv ditt meddelande här..."
                           ></textarea>
                 
-                          <input type="submit" value="Submit" />
+                          <input type="submit" value="Skicka" />
                         </form>
+                        <a href="https://www.linkedin.com/in/kim-vagi-3a8a7055/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                        <p class="phone"><i class="fas fa-phone"> 0705- 29 49 89</i></p>
                       </div>
-        
-      </section>
-      <footer><p>&copy Max Aakre</p></footer>
+        </section>
+      <footer>
+          <p>&copy Max Aakre</p>
+          
+    </footer>
     </div>
   </body>
 </html>

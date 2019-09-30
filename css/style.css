@@ -99,13 +99,14 @@ section.grid-container h4 {
   flex-flow: column;
 }
 .grid-container .grid-item .box:nth-child(2) {
-  margin-top: 4.5em;
+  margin-top: 4em;
 }
 
 .grid-container .grid-item .box p {
   margin: 2%;
   font-size: 1.5em;
   color: black;
+  line-height: 1em;
 }
 
 .grid-container .grid-item .box .hidden {
@@ -140,7 +141,92 @@ section.grid-container h1 {
   margin: 5%;
   font-size: 1.5em;
 }
+/* css till om mig sidan */
+span p {
+  line-height: 2em;
+  padding: 2em;
+}
+/* css till kontakt sidan */
+.contact-form {
+  align-content: center;
+  justify-content: center;
+  background: #a8a19e;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  background: #9db2a9;
+}
 
+/* Inmatnings anmärkning */
+label {
+  font-size: 0.85em;
+  margin-left: 1.2em;
+  display: flex;
+  margin: 1em;
+  font-family: "Montserrat", sans-serif;
+}
+/* Mail området */
+input[type="email"] {
+  margin-left: 2%;
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+}
+/* text medelandet */
+input[type="text"],
+textarea {
+  margin-left: 2%;
+  width: 60%;
+  height: 200px;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-decoration: #000;
+  resize: none;
+}
+/* Knappen */
+input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 120px;
+  height: 45px;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  margin: 3% 1% 3%;
+}
+/* placeholder färgen */
+textarea::placeholder {
+  color: #000;
+}
+
+.linkedin {
+  font-size: 3em;
+  margin: auto;
+  color: black;
+}
+
+.phone {
+  padding: 2%;
+  font-size: 1.5em;
+}
+
+/* css till kontakt sidan slut */
 footer {
   background: #545669;
   text-align: center;
@@ -153,27 +239,28 @@ footer {
     width: 100%;
     display: grid;
     grid-template-rows: repeat(7, auto);
-    grid-template-columns: 1, auto;
+    grid-template-columns: 4, auto;
     font-family: "Big Shoulders Display", cursive;
   }
+
   header ul a {
     font-size: 1.5em;
   }
 
-  .flex-item {
-    display: flex;
-    margin: 2%;
-    width: 100%;
-  }
-
-  section .grid-item:nth-child(3) {
-    border-right: 1px solid black;
+  section .grid-item:nth-child(3) button {
+    text-decoration: none;
+    margin-left: 43%;
   }
 
   section .grid-item:nth-child(4) button {
-    display: inline;
+    text-decoration: none;
+    margin-left: 43%;
   }
   .grid-container .grid-item .box:nth-child(2) {
     margin-top: 6.5em;
+  }
+  input[type="text"],
+  textarea {
+    width: 90%;
   }
 }
