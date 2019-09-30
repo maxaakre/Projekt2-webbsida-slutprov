@@ -40,10 +40,13 @@ header ul a {
   margin-right: 2rem;
   text-decoration: none;
 }
-
+.active {
+  color: black;
+}
 main h2 {
   text-align: center;
   margin-top: 1em;
+  margin-bottom: 1em;
   color: #9db2a9;
 }
 
@@ -135,10 +138,12 @@ section.grid-container button {
   color: black;
   padding: 1rem 2rem;
   text-align: center;
-  text-decoration: none;
   font-size: 1em;
   border-radius: 5%;
   font-family: "Montserrat", sans-serif;
+}
+section.grid-container a {
+  text-decoration: none;
 }
 
 section.grid-container button:hover {
@@ -154,6 +159,15 @@ span p {
   line-height: 2em;
   padding: 2em;
 }
+img.me {
+  display: block;
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+}
+/* css till om mig slut */
+
 /* css till kontakt sidan */
 section.grid-container-contact {
   display: grid;
@@ -180,7 +194,6 @@ label {
   margin: auto;
   text-align: center;
   font-size: 0.85em;
-
   margin: 1em;
   font-family: "Montserrat", sans-serif;
 }
