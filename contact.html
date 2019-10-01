@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/style.css" />
+
     <script
       src="https://kit.fontawesome.com/99fe370a13.js"
       crossorigin="anonymous"
     ></script>
-
     <link
       href="https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Montserrat&display=swap"
       rel="stylesheet"
     />
-    <title>Kim Vagi Projekt 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+      integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk="
+      crossorigin="anonymous"
+    />
+    <title>Kim Vagi Projekt 2 Kontakt</title>
   </head>
   <body>
     <div class="container">
@@ -26,12 +32,39 @@
           <li><a href="contact.html" class="active">Kontakt</a></li>
         </ul>
       </header>
-      <div class="grid-container">
-        
+      <main>
+        <h2>
+          Skicka ett Mail till mig!
+        </h2>
 
+        <img src="images/Email-670x335.jpg" alt="img" />
+      </main>
+      <section class="grid-container-contact animated bounceInLeft">
+        <div class="grid-item">
+          <div class="contact-form">
+            <form action="contact-form">
+              <label for="email">Din Email:</label>
+              <input name="email" type="email" />
+              <br />
+              <label for="message">Ditt Medelande:</label><br />
+              <textarea
+                name="message"
+                placeholder="Skriv ditt meddelande här..."
+              ></textarea>
 
-      </div>
-    
+              <input type="submit" value="Skicka" />
+            </form>
+            <a
+              href="https://www.linkedin.com/in/kim-vagi-3a8a7055/"
+              class="linkedin"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <p class="phone"><i class="fas fa-phone"> 0705- 29 49 89</i></p>
+          </div>
+        </div>
+      </section>
+    </div>
     <footer><p>&copy Max Aakre</p></footer>
   </body>
 </html>
