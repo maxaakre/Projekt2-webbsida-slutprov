@@ -82,45 +82,7 @@ main img {
 .container h3 {
   margin-left: 1%;
 }
-.grid-item-1 h1 {
-  text-align: center;
-  line-height: 2rem;
-  padding: 1rem;
-}
-.grid-item-1 p {
-  padding: 1rem;
-}
 
-.grid-item-2,
-.grid-item-3,
-.grid-item-4,
-.grid-item-5 {
-  border-bottom: 2px solid black;
-  text-align: center;
-}
-
-.grid-item-1,
-.grid-item-2,
-.grid-item-3,
-.grid-item-4 h1 {
-  text-align: center;
-  color: black;
-}
-
-.grid-item-1,
-.grid-item-2,
-.grid-item-3,
-.grid-item-4,
-.grid-item-5,
-p .hidden {
-  margin-bottom: 2rem;
-  padding: 2%;
-  font-size: 1.5em;
-}
-
-.grid-item-6 p {
-  font-size: 1.5rem;
-}
 .container h4 {
   color: white;
   margin-left: 1%;
@@ -152,8 +114,52 @@ p .hidden {
   margin: 5%;
   font-size: 1.5em;
 }
+
+.grid-item-1 h1 {
+  text-align: center;
+  line-height: 2rem;
+  padding: 1rem;
+}
+.grid-item-1 p {
+  padding: 1rem;
+}
+
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5 {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4 h1 {
+  text-align: center;
+  color: black;
+}
+
+.grid-item-1,
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5,
+p .hidden {
+  margin-bottom: 2rem;
+  padding: 2%;
+  font-size: 1.5em;
+}
+
+.grid-item-6 p {
+  font-size: 1.5rem;
+}
 /* css till om mig sidan */
 
+.grid-item {
+  padding: 2%;
+  font-size: 1.3rem;
+}
 .om-mig {
   grid-column: 1/3;
 }
@@ -172,12 +178,6 @@ img.me {
 
 /* css till kontakt sidan */
 
-/* .grid-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, auto);
-  background: #9db2a9;
-} */
 .contact-form {
   display: block;
   margin: auto;
@@ -196,14 +196,13 @@ label {
   display: block;
   margin: auto;
   text-align: center;
-  font-size: 0.85em;
+  font-size: 1.5em;
   margin: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
 /* Mail området */
 input[type="email"] {
-  /* margin-left: 2%; */
   width: 60%;
   height: 1.9rem;
   border-radius: 5px;
@@ -213,7 +212,6 @@ input[type="email"] {
 /* text medelandet */
 input[type="text"],
 textarea {
-  /* margin-left: 2%; */
   width: 60%;
   height: 12.5rem;
   border-radius: 5px;
@@ -329,6 +327,12 @@ footer {
     grid-column: 1/3;
     padding: 2%;
   }
+
+  .img-om-mig {
+    height: 50%;
+    width: 50%;
+  }
+
   /* css om mig slut */
 
   /* kontakt sidan */
@@ -337,17 +341,16 @@ footer {
   }
   .grid-item-contact {
     grid-column: 1 / 3;
-    display: block;
     width: 100%;
-    /* width: 1000px; */
+  }
+
+  .img-mail {
+    width: 50%;
+    height: 50%;
   }
 
   .contact-form {
-    /* display: flex; */
     grid-column: 1/3;
-
-    /* margin-left: 2%; */
-    /* width: 100%; */
   }
 
   label {
@@ -361,10 +364,9 @@ footer {
   }
   input[type="text"],
   textarea {
+    padding: 1rem;
     display: block;
     margin: auto;
-    /* display: flex; */
-    /* margin-left: 2%; */
     width: 95%;
   }
 
@@ -383,20 +385,9 @@ footer {
 
   .contact-list {
     list-style: none;
-    /* text-align: left; */
     width: 300px;
     margin: auto;
     grid-column: 1/3;
-  }
-
-  .linkedin {
-    margin: 0;
-    margin-top: 0;
-  }
-
-  .phone {
-    /* display: flex; */
-    padding: 0;
   }
 
   li {
@@ -405,8 +396,20 @@ footer {
     justify-content: center;
     padding: 0.5em;
   }
-  footer p {
-    /* margin-bottom: 1rem; */
+
+  .linkedin {
+    margin: 0;
+    margin-top: 0;
+  }
+  .linkedin:hover {
+    color: white;
+  }
+
+  .phone {
+    padding: 0;
+  }
+  footer {
+    padding: 0.5rem;
     color: white;
   }
 
