@@ -15,7 +15,7 @@ font-family: 'Montserrat', sans-serif; */
   width: 100%;
   display: grid;
   grid-template-rows: repeat(7, auto);
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   font-family: "Big Shoulders Display", cursive;
   background: #9db2a9;
 }
@@ -65,6 +65,7 @@ main img {
   display: block;
   margin: auto;
   margin-bottom: 1rem;
+  height: 50%;
 }
 
 .container h2 {
@@ -85,8 +86,12 @@ main img {
   text-align: center;
 }
 
-.grid-item-2 .grid-item-3 .grid-item-4 .grid-item-5 {
+.grid-item-2,
+.grid-item-3,
+.grid-item-4,
+.grid-item-5 {
   border-bottom: 2px solid black;
+  text-align: center;
 }
 
 .grid-item-1 .grid-item-2 .grid-item-3 .grid-item-4 h1 {
@@ -97,7 +102,6 @@ main img {
 .grid-item-1 .grid-item-2 .grid-item-3 .grid-item-4 p .hidden {
   margin-bottom: 1rem;
 }
-
 .container h4 {
   color: white;
   margin-left: 1%;
@@ -106,12 +110,6 @@ main img {
 .grid-item-1 .grid-item-2 .grid-item-3 .grid-item-4 .hidden {
   font-size: 1em;
   color: white;
-}
-
-.grid-item-2 .grid-item-3 .grid-item-4 .grid-item-5 img {
-  margin-left: 1em;
-  width: 2em;
-  height: 2em;
 }
 
 .container button {
@@ -191,7 +189,7 @@ label {
 
 /* Mail området */
 input[type="email"] {
-  margin-left: 2%;
+  /* margin-left: 2%; */
   width: 60%;
   height: 1.9rem;
   border-radius: 5px;
@@ -201,7 +199,7 @@ input[type="email"] {
 /* text medelandet */
 input[type="text"],
 textarea {
-  margin-left: 2%;
+  /* margin-left: 2%; */
   width: 60%;
   height: 12.5rem;
   border-radius: 5px;
@@ -239,9 +237,12 @@ input[type="submit"] {
 textarea::placeholder {
   color: #000;
 }
+.contact-list {
+  text-align: center;
+}
 .linkedin {
   font-size: 3em;
-  margin-top: 20% 20%;
+  margin: 20% 20%;
   margin: auto;
   color: black;
 }
@@ -267,6 +268,7 @@ footer {
 
   header {
     grid-column: 1/3;
+
     font-size: 1.5em;
   }
 
@@ -314,30 +316,33 @@ footer {
   /* kontakt sidan */
 
   .grid-item-contact {
-    grid-column: 1/3;
-    width: 1000px;
+    grid-column: 1 / 3;
+    width: 100%;
   }
 
   .contact-form {
-    display: flex;
+    /* display: flex; */
+    grid-column: 1/3;
     /* margin-left: 2%; */
-    width: 90%;
+    width: 100%;
   }
 
   label {
     display: flex;
-    margin-left: 1.2em;
-    font-size: 1em;
+    /* margin-left: 1.2em; */
+    font-size: 1.5em;
   }
   input[type="email"] {
     display: flex;
-    margin-left: 2%;
+    margin: auto;
+    /* margin-left: 2%; */
   }
   input[type="text"],
   textarea {
-    display: flex;
-    margin-left: 2%;
-    width: 90%;
+    margin: auto;
+    /* display: flex; */
+    /* margin-left: 2%; */
+    width: 95%;
   }
   input[type="submit"] {
     font-size: 0.7em;
@@ -349,10 +354,33 @@ footer {
     margin-bottom: 2%;
   }
 
+  .contact-list {
+    list-style: none;
+    /* text-align: left; */
+    width: 300px;
+    margin: auto;
+    grid-column: 1/3;
+  }
+
   .linkedin {
+    margin: 0;
+    margin-top: 0;
   }
 
   .phone {
+    /* display: flex; */
+    padding: 0;
   }
+
+  li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 0.5em;
+  }
+  footer + p {
+    margin-bottom: 1rem;
+  }
+
   /* kontakt sidan slut */
 }
