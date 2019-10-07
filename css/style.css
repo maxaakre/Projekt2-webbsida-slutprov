@@ -1,5 +1,3 @@
-/* font-family: 'Big Shoulders Display', cursive;
-font-family: 'Montserrat', sans-serif; */
 * {
   padding: 0;
   margin: 0;
@@ -22,7 +20,6 @@ font-family: 'Montserrat', sans-serif; */
 header {
   height: 5rem;
   display: flex;
-  padding: 0 1.25rem;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #eee;
@@ -45,6 +42,7 @@ header ul a {
   color: #9db2a9;
   margin-right: 2rem;
   text-decoration: none;
+  font-size: 1rem;
 }
 .active {
   color: black;
@@ -73,7 +71,6 @@ main img {
 }
 
 .container p {
-  display: block;
   text-align: center;
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -113,6 +110,7 @@ main img {
 .container h1 {
   margin: 5%;
   font-size: 1.5em;
+  text-align: center;
 }
 
 .grid-item-1 h1 {
@@ -135,27 +133,19 @@ main img {
 .grid-item-1,
 .grid-item-2,
 .grid-item-3,
-.grid-item-4 h1 {
-  text-align: center;
-  color: black;
-}
-
-.grid-item-1,
-.grid-item-2,
-.grid-item-3,
 .grid-item-4,
 .grid-item-5,
-p .hidden {
-  margin-bottom: 2rem;
+p .grid-p {
   padding: 2%;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
-.grid-item-6 p {
-  font-size: 1.5rem;
+.grid-item-6,
+.grid-item-7,
+p {
+  font-size: 1.4rem;
 }
 /* css till om mig sidan */
-
 .grid-item {
   padding: 2%;
   font-size: 1.3rem;
@@ -164,34 +154,30 @@ p .hidden {
   grid-column: 1/3;
 }
 span p {
-  line-height: 2em;
-  padding: 2em;
+  line-height: 1.5em;
+  padding: 1em;
 }
+
 img.me {
   display: block;
   margin: auto;
-  width: 6rem;
-  height: 6rem;
+  width: 6em;
+  height: 6em;
   border-radius: 50%;
 }
 /* css till om mig slut */
 
 /* css till kontakt sidan */
-
 .contact-form {
   display: block;
   margin: auto;
   text-align: center;
-  background: #a8a19e;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin: auto;
   flex-direction: column;
   background: #9db2a9;
+  padding: 2em;
+  height: 100%;
 }
 
-/* Inmatnings anmärkning */
 label {
   display: block;
   margin: auto;
@@ -201,7 +187,6 @@ label {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Mail området */
 input[type="email"] {
   width: 60%;
   height: 1.9rem;
@@ -209,25 +194,22 @@ input[type="email"] {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
 }
-/* text medelandet */
+
 input[type="text"],
 textarea {
+  padding: 1em;
   width: 60%;
   height: 12.5rem;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
   text-decoration: #000;
+  font-size: 1.5em;
   resize: none;
 }
 
-/* Knappen */
 input[type="submit"] {
-  display: block;
-  text-align: center;
-  width: 7.5rem;
   height: 3rem;
-  font-size: 1em;
+  font-size: 0.9em;
   text-transform: uppercase;
   letter-spacing: 0.4em;
   font-weight: 500;
@@ -241,13 +223,12 @@ input[type="submit"] {
   outline: none;
   font-family: "Montserrat", sans-serif;
   margin: auto;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 2em;
 }
 
-/* placeholder färgen */
 textarea::placeholder {
   color: #000;
+  font-size: 1rem;
 }
 .contact-list {
   text-align: center;
@@ -256,7 +237,7 @@ textarea::placeholder {
   font-size: 3em;
   margin: 20% 20%;
   margin: auto;
-  color: black;
+  color: #fff;
 }
 
 .phone {
@@ -264,7 +245,6 @@ textarea::placeholder {
   font-size: 1.5em;
 }
 footer {
-  display: block;
   text-align: center;
   background: #545669;
   font-family: "Montserrat", sans-serif;
@@ -283,8 +263,21 @@ footer {
     font-size: 1.5em;
   }
 
+  header li a {
+    font-size: 1.1em;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+  }
+  header li a:hover {
+    box-shadow: 2px 2px gray;
+  }
   main {
     grid-column: 1/3;
+  }
+
+  #grid-h1 {
+    grid-column: 1/3;
+    font-size: 2rem;
   }
 
   .grid-item-1 {
@@ -314,8 +307,8 @@ footer {
     font-size: 1.4rem;
   }
 
-  .grid-item-7 button {
-    margin-top: 3rem;
+  .border-bottom {
+    margin-top: 0;
   }
   .footer {
     grid-column: 1/3;
@@ -328,20 +321,19 @@ footer {
     padding: 2%;
   }
 
-  .img-om-mig {
-    height: 50%;
-    width: 50%;
+  .span p {
+    padding: 2em;
   }
 
+  .img-om-mig {
+    height: 300px;
+    width: 70%;
+  }
   /* css om mig slut */
 
   /* kontakt sidan */
   .grid-container-contact {
     grid-column: 1/3;
-  }
-  .grid-item-contact {
-    grid-column: 1 / 3;
-    width: 100%;
   }
 
   .img-mail {
@@ -349,48 +341,55 @@ footer {
     height: 50%;
   }
 
+  /* kontakt sidan slut */
+
   .contact-form {
-    grid-column: 1/3;
+    display: block;
+    text-align: start;
+    width: 50%;
   }
 
   label {
-    display: block;
+    text-align: start;
+    margin: 1em 0;
     font-size: 1.5em;
   }
 
   input[type="email"] {
-    display: block;
-    margin: auto;
+    text-align: start;
+    width: 95%;
   }
+
   input[type="text"],
   textarea {
+    text-align: start;
     padding: 1rem;
-    display: block;
-    margin: auto;
     width: 95%;
+    height: 500px;
   }
 
   ::placeholder {
     font-size: 1.5rem;
   }
   input[type="submit"] {
-    font-size: 1em;
     display: flex;
-    margin-left: 3%;
-    margin-top: 1rem;
     text-align: center;
     justify-content: center;
-    margin-bottom: 2%;
+    padding: 1rem;
+    width: 50%;
   }
-
+  input[type="submit"]:hover {
+    color: #fff;
+    background: #000;
+  }
   .contact-list {
     list-style: none;
-    width: 300px;
+    width: 500px;
     margin: auto;
     grid-column: 1/3;
   }
 
-  li {
+  ul.contact-list li {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -400,9 +399,10 @@ footer {
   .linkedin {
     margin: 0;
     margin-top: 0;
+    color: #fff;
   }
   .linkedin:hover {
-    color: white;
+    color: #000;
   }
 
   .phone {
@@ -412,6 +412,5 @@ footer {
     padding: 0.5rem;
     color: white;
   }
-
   /* kontakt sidan slut */
 }
