@@ -245,6 +245,14 @@ textarea::placeholder {
   padding: 2%;
   font-size: 1.5em;
 }
+.go-up {
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 1rem;
+}
 footer {
   text-align: center;
   background: #545669;
