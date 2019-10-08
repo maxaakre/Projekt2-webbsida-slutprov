@@ -188,7 +188,7 @@ label {
 }
 
 input[type="email"] {
-  width: 60%;
+  width: 90%;
   height: 1.9rem;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
@@ -198,7 +198,7 @@ input[type="email"] {
 input[type="text"],
 textarea {
   padding: 1em;
-  width: 60%;
+  width: 90%;
   height: 12.5rem;
   border-radius: 5px;
   font-family: "Montserrat", sans-serif;
@@ -224,6 +224,7 @@ input[type="submit"] {
   font-family: "Montserrat", sans-serif;
   margin: auto;
   margin-top: 2em;
+  width: 90%;
 }
 
 textarea::placeholder {
