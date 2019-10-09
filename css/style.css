@@ -166,7 +166,6 @@ img.me {
   border-radius: 50%;
 }
 /* css till om mig slut */
-
 /* css till kontakt sidan */
 .contact-form {
   display: block;
@@ -234,6 +233,8 @@ textarea::placeholder {
 .contact-list {
   text-align: center;
 }
+/* i kontakt sidan */
+/* nedanför i footer */
 .linkedin {
   font-size: 3em;
   margin: 20% 20%;
@@ -259,9 +260,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   color: #ecf4ec;
 }
-
 /* css till kontakt sidan slut */
-
 @media only screen and (min-width: 600px) {
   .container {
     grid-template-columns: 50% 50%;
@@ -274,7 +273,6 @@ footer {
 
   header li a {
     font-size: 1.1em;
-    /* border: 1px solid black; */
     border-radius: 5px;
   }
   header li a:hover {
@@ -323,7 +321,6 @@ footer {
     grid-column: 1/3;
   }
   /* css hem slut */
-
   /* css om mig */
   .grid-container {
     grid-column: 1/3;
@@ -339,7 +336,6 @@ footer {
     width: 70%;
   }
   /* css om mig slut */
-
   /* kontakt sidan */
   .grid-container-contact {
     grid-column: 1/3;
@@ -347,10 +343,7 @@ footer {
 
   .img-mail {
     width: 50%;
-    height: 50%;
   }
-
-  /* kontakt sidan slut */
 
   .contact-form {
     display: block;
@@ -391,6 +384,8 @@ footer {
     color: #fff;
     background: #000;
   }
+
+  /* nedanför i footer på kontakt sidan */
   .contact-list {
     list-style: none;
     width: 500px;
@@ -404,7 +399,6 @@ footer {
     justify-content: center;
     padding: 0.5em;
   }
-
   .linkedin {
     margin: 0;
     margin-top: 0;
@@ -421,5 +415,5 @@ footer {
     padding: 0.5rem;
     color: white;
   }
-  /* kontakt sidan slut */
+  /* i footer på kontakt sidan och slut*/
 }
