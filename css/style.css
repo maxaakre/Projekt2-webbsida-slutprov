@@ -37,7 +37,6 @@ header ul {
 }
 
 header ul a {
-  display: block;
   padding: 10px;
   color: #9db2a9;
   margin-right: 2rem;
@@ -179,7 +178,6 @@ img.me {
 
 label {
   display: block;
-  margin: auto;
   text-align: center;
   font-size: 1.5em;
   margin: 1em;
